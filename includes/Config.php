@@ -1,11 +1,5 @@
 <?php
 
-
-/**
- * Sunucu bağımsız değişkenler burada belirleniyor.
- * Sunucu bağımlılığı olan değişkenleri sunucunuza göre belirtin.
- */
-
 // Session start
 ob_start();
 session_start();
@@ -66,5 +60,5 @@ if (gethostname() === "hostname") {
 
 
 } else {
-	die("Tanımsız Host: " . gethostname());
+	die("Unknown Host: " . gethostname());
 }
